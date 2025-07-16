@@ -70,14 +70,7 @@ Ensure it's properly installed and linked in your build environment.
 
 Clone this repository or download the source files manually.  
 Make sure you have the following structure:
-
-CheesyChess/
-├── Source.cpp
-└── resources/
-    ├── loading.wav
-    ├── button_click.wav
-    └── move.wav
-
+<pre lang="markdown"> ``` CheesyChess/ ├── Source.cpp └── resources/ ├── loading.wav ├── button_click.wav └── move.wav ``` </pre>
 
 ---
 
