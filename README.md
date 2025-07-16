@@ -71,3 +71,63 @@ Ensure it's properly installed and linked in your build environment.
 Clone this repository or download the source files manually.  
 Make sure you have the following structure:
 
+CheesyChess/
+├── Source.cpp
+└── resources/
+    ├── loading.wav
+    ├── button_click.wav
+    └── move.wav
+
+
+---
+
+### 3. Build the Project
+
+Compile `Source.cpp` using your preferred C++ compiler.  
+Example with `g++`:
+
+```bash
+g++ Source.cpp -o CheesyChess -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+```
+
+⚠️ Adjust the linker flags based on your operating system.
+
+### 4. Ensure Resources
+Make sure the resources/ folder (containing loading.wav, button_click.wav, and move.wav) is in the same directory as the compiled binary.
+
+### 5. Run the game
+```bash
+./CheesyChess
+```
+### 🕹️ How to Play
+## 🎮 Controls
+- Left Click: Select a piece or move it to a valid square
+- Right Click: Deselect a selected piece
+- ESC: Return to the main menu
+
+### 🧭 Game Flow
+
+- Start at the Loading Screen
+- Transition to the Main Menu:
+- Choose Play to start a game
+- Select Settings to adjust options
+# 2. View Achievements
+# In-game:
+- Alternate turns between White and Black
+- See status messages like:
+- White to move
+- Check
+- Checkmate
+- Pawn Promotion: Choose from Queen, Rook, Knight, or Bishop when a pawn reaches the last rank.
+
+## 🗂️ Project Structure
+
+| File/Folder          | Description                          |
+|----------------------|--------------------------------------|
+| `Source.cpp`         | Main source file for game logic, UI  |
+| `resources/`         | Sound files for loading and in-game FX |
+| `loading.wav`        | Played on loading screen            |
+| `button_click.wav`   | Played on button interactions       |
+| `move.wav`           | Played when moving pieces           |
+
+
